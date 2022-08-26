@@ -1,0 +1,40 @@
+/******************components******************/
+
+.sign-up-button {
+    background-color: var(--secondary-color);
+    color: black;
+    border: .15rem solid var(--secondary-color);
+    display: flex;
+    align-items: center;
+    border-radius: .6rem;
+    padding: .5rem 2rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all .4s;
+}
+
+.log-in-button {
+    background-color: transparent;
+    color: var(--white-color);
+    border: .15rem solid var(--white-color);
+    display: flex;
+    align-items: center;
+    border-radius: .6rem;
+    padding: .5rem 2rem;
+    margin-left: 1.5rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all .4s;
+}
+
+
+
+.sign-up-button:hover {
+    background-color: transparent;
+    color: var(--secondary-color);
+}
+
+.log-in-button:hover {
+    border: .2rem solid var(--secondary-color);
+    color: var(--secondary-color);
+}

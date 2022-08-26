@@ -1,0 +1,44 @@
+/******************utility******************/
+
+.container {
+    max-width: 1360px;
+    margin: 0 auto;
+}
+
+.second-container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.font-size-18 {
+    font-size: 1.125rem;
+}
+
+.font-size-24 {
+    font-size: 1.5rem;
+}
+
+.font-size-32 {
+    font-size: 2rem;
+}
+
+.mb-7{
+    margin-bottom: 6rem;
+}
+
+.gap-35{
+    gap: 2.22rem;
+}
+
+.gap-50{
+    gap: 5rem;
+}
+
+.mx-6{
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
+
+.cursor-pointer{
+    cursor: pointer;
+}

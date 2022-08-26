@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width , initial-scale=1 , maximum-scale=1" />
+    <meta name="author" content="Fahime Honarpishefard" />
+    <meta name="description" content="music player" />
+    <meta name="keywords" content="music , stream" />
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="./../css/modules/style.css" />
+    <link rel="shortcut icon" href="./../img/Title-Img.png" type="image">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;900&display=swap" rel="stylesheet">
+    <title>Ult Music</title>
+</head>
+
+<body id="homePage">
+    <header>
+        <div class="container">
+            <nav class="header-nav font-size-18">
+                <img class="header-logo" src="./../img/logo.svg" alt="logo" width=160px height=65px />
+                <ul class="header-menu m-0">
+                    <li class="header-menu-item"><a href="#">PODCAST</a></li>
+                    <li class="header-menu-item"><a href="#">SUPPORT</a></li>
+                    <li class="header-menu-item"><a href="#">ABOUT US</a></li>
+                </ul>
+                <button class="sign-up-button font-size-18">Sign Up</button>
+                <button class="log-in-button font-size-18">Log In</button>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <form class="d-flex justify-content-end pe-5" action="#">
+            <input class="search-box mt-4 border-0 rounded-4 text-black fs-4 ps-4 py-2 w-50" type="search" name="search" placeholder="Search..." />
+        </form>
+        <section class="container">
+            <section class="recently-popular mt-5">
+                <p class="fw-semibold font-size-32 mb-3">Recently Popular</p>
+                <div class="row gap-35 music-container"></div>
+            </section>
+            <section class="new-releases"></section>
+            <section class="popular-playlists"></section>
+            <section class="in-the-spotlight"></section>
+            <section class="you-might-like"></section>
+        </section>
+    </main>
+    <footer class="main-footer"></footer>
+
+
+    <script type="module" src="./../js/appTEST.js"></script>
+</body>
+
+</html>

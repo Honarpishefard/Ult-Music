@@ -1,0 +1,20 @@
+/******************css reset******************/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    color: var(--white-color);
+    text-decoration: none;
+    transition: color .4s;
+}
+
+a:hover {
+    color: var(--secondary-color);
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
