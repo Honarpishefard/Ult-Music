@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width , initial-scale=1 , maximum-scale=1" />
+    <meta name="author" content="Fahime Honarpishefard" />
+    <meta name="description" content="music player" />
+    <meta name="keywords" content="music , stream" />
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="./../css/style.css" />
+    <link rel="shortcut icon" href="./../img/Title-Img.png" type="image">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;900&display=swap" rel="stylesheet">
+    <title>Now Playing</title>
+</head>
+
+<body id="nowPlayingPage">
+
+    <div class="d-flex">
+        <div id="mainCover" class="album-sec w-75 vh-100 d-flex flex-column justify-content-end">
+            <div class="d-flex">
+                <p id="songTittle" class="flex-grow-1 text-white fw-bolder display-3 ms-5 mb-0">SONG TITTLE</p>
+            </div>
+            <div class="ms-5">
+                <div class="d-flex align-items-center ms-2 gap-2">
+                    <p id="artistName" class="text-white opacity-75 mb-0 fw-normal font-size-24">By [Artist]</p>
+                </div>
+            </div>
+            <div class="music-progress position-relative rounded-2 mx-5 overflow-hidden mt-2 mb-1">
+                <input id="musicProgressInput" value="0" type="range"
+                    class="w-100 position-absolute top-0 h-100 bg-transparent">
+                <div class="music-progress-bar py-1 rounded-2 bg-white position-absolute pe-none"></div>
+            </div>
+            <audio src="" id="audio"></audio>
+            <div class="d-flex">
+                <p id="currentTime" class="text-white fw-light font-size-18 flex-grow-1 mx-6 mt-1 mb-0">00 : 00</p>
+                <p id="fullDuration" class="text-white fw-light font-size-18 mx-6 mt-1 mb-0">00 : 00</p>
+            </div>
+            <div id="controls" class="d-flex justify-content-center gap-50 mt-1 align-items-center">
+                <img src="./../img/now playing svg/ph_shuffle.svg" class="cursor-pointer" width="35px" height="35px"
+                    alt="">
+                <img id="previousBttn" src="./../img/now playing svg/fluent_previous-48-filled.svg"
+                    class="cursor-pointer" width="48px" height="48px" alt="">
+                <div id="playBttnDiv" class="cursor-pointer">
+                    <img id="playBttn" src="./../img/now playing svg/bi_play-circle-fill.svg" width="65px" height="65px"
+                        alt="">
+                </div>
+                <img id="nextBttn" src="./../img/now playing svg/fluent_next-48-filled.svg" class="cursor-pointer"
+                    width="48px" height="48px" alt="">
+                <img src="./../img/now playing svg/prime_replay.svg" class="cursor-pointer" width="35px" height="35px"
+                    alt="">
+            </div>
+            <div class="d-flex justify-content-end gap-4 me-5 mb-3 mt-2">
+                <img src="./../img/now playing svg/eva_plus-circle-outline.svg" class="cursor-pointer" width="30px"
+                    height="30px" alt="">
+                <img src="./../img/ic_round-playlist-add.svg" class="cursor-pointer" width="36px" height="36px" alt="">
+                <img src="./../img/now playing svg/bx_share-alt.svg" class="cursor-pointer" width="30px" height="30px"
+                    alt="">
+            </div>
+        </div>
+        <div class="w-50 bg-black vh-100 d-flex flex-column justify-content-center align-items-center gap-3">
+            <div class="d-flex w-75 justify-content-between align-items-center mb-3">
+                <p class="text-white fw-semibold font-size-32">Playing Queue</p>
+                <p class="text-white">Clear Queue</p>
+            </div>
+            <div class="text-white d-flex gap-35 align-items-center">
+                <img src="./../img/now playing svg/majesticons_delete-bin.svg" alt="">
+                <img src="./../img/now playing svg/fa6-solid_grip-lines.svg" alt="">
+                <p class="ps-2 pe-5 fw-semibold mb-0">Track Tittle</p>
+                <p class="fw-light fs-6 text-white opacity-75 mb-0">00:00</p>
+            </div>
+            <div class="text-white d-flex gap-35 align-items-center">
+                <img src="./../img/now playing svg/majesticons_delete-bin.svg" alt="">
+                <img src="./../img/now playing svg/fa6-solid_grip-lines.svg" alt="">
+                <p class="ps-2 pe-5 fw-semibold mb-0">Track Tittle</p>
+                <p class="fw-light fs-6 text-white opacity-75 mb-0">00:00</p>
+            </div>
+            <div class="text-white d-flex gap-35 align-items-center">
+                <img src="./../img/now playing svg/majesticons_delete-bin.svg" alt="">
+                <img src="./../img/now playing svg/fa6-solid_grip-lines.svg" alt="">
+                <p class="ps-2 pe-5 fw-semibold mb-0">Track Tittle</p>
+                <p class="fw-light fs-6 text-white opacity-75 mb-0">00:00</p>
+            </div>
+            <div class="text-white d-flex gap-35 align-items-center">
+                <img src="./../img/now playing svg/majesticons_delete-bin.svg" alt="">
+                <img src="./../img/now playing svg/fa6-solid_grip-lines.svg" alt="">
+                <p class="ps-2 pe-5 fw-semibold mb-0">Track Tittle</p>
+                <p class="fw-light fs-6 text-white opacity-75 mb-0">00:00</p>
+            </div>
+            <div class="text-white d-flex gap-35 align-items-center">
+                <img src="./../img/now playing svg/majesticons_delete-bin.svg" alt="">
+                <img src="./../img/now playing svg/fa6-solid_grip-lines.svg" alt="">
+                <p class="ps-2 pe-5 fw-semibold mb-0">Track Tittle</p>
+                <p class="fw-light fs-6 text-white opacity-75 mb-0">00:00</p>
+            </div>
+            <div class="text-white d-flex gap-35 align-items-center">
+                <img src="./../img/now playing svg/majesticons_delete-bin.svg" alt="">
+                <img src="./../img/now playing svg/fa6-solid_grip-lines.svg" alt="">
+                <p class="ps-2 pe-5 fw-semibold mb-0">Track Tittle</p>
+                <p class="fw-light fs-6 text-white opacity-75 mb-0">00:00</p>
+            </div>
+            <div class="text-white d-flex gap-35 align-items-center">
+                <img src="./../img/now playing svg/majesticons_delete-bin.svg" alt="">
+                <img src="./../img/now playing svg/fa6-solid_grip-lines.svg" alt="">
+                <p class="ps-2 pe-5 fw-semibold mb-0">Track Tittle</p>
+                <p class="fw-light fs-6 text-white opacity-75 mb-0">00:00</p>
+            </div>
+            <div class="text-white d-flex gap-35 align-items-center">
+                <img src="./../img/now playing svg/majesticons_delete-bin.svg" alt="">
+                <img src="./../img/now playing svg/fa6-solid_grip-lines.svg" alt="">
+                <p class="ps-2 pe-5 fw-semibold mb-0">Track Tittle</p>
+                <p class="fw-light fs-6 text-white opacity-75 mb-0">00:00</p>
+            </div>
+            <div class="text-white d-flex gap-35 align-items-center">
+                <img src="./../img/now playing svg/majesticons_delete-bin.svg" alt="">
+                <img src="./../img/now playing svg/fa6-solid_grip-lines.svg" alt="">
+                <p class="ps-2 pe-5 fw-semibold mb-0">Track Tittle</p>
+                <p class="fw-light fs-6 text-white opacity-75 mb-0">00:00</p>
+            </div>
+            <div class="text-white d-flex gap-35 align-items-center">
+                <img src="./../img/now playing svg/majesticons_delete-bin.svg" alt="">
+                <img src="./../img/now playing svg/fa6-solid_grip-lines.svg" alt="">
+                <p class="ps-2 pe-5 fw-semibold mb-0">Track Tittle</p>
+                <p class="fw-light fs-6 text-white opacity-75 mb-0">00:00</p>
+            </div>
+        </div>
+    </div>
+
+
+    <script type="module" src="./../js/app.js"></script>
+</body>
+
+</html>

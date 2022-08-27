@@ -1,6 +1,6 @@
-@import url(./../modules/css\ reset.css);
-@import url(./../modules/utility.css);
-@import url(./../modules/components.css);
+@import url(./modules/css-reset.css);
+@import url(./modules/utility.css);
+@import url(./modules/components.css);
 
 :root {
     --primary-color: #41435A;
