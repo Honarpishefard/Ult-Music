@@ -66,12 +66,21 @@
                         fill="#D2D2D2" />
                 </svg>
             </div>
-            <div class="d-flex justify-content-end gap-4 me-5 mb-3 mt-2">
-                <img src="./../img/now playing svg/eva_plus-circle-outline.svg" class="cursor-pointer" width="30px"
+            <div class="d-flex justify-content-end gap-4 mx-5 mb-3 mt-2">
+                <div class="d-flex gap-3 align-items-center flex-grow-1 ms-2">
+                    <img src="./../img/now playing svg/volume-high-solid.svg" id="musicVolumeIcon"
+                        class="cursor-pointer mt-1 music-volume-icon" width="28px" height="28px" alt="">
+                    <div id="volumeInputDiv" class="music-volume-input position-relative rounded-2">
+                        <input id="musicVolume" min="0" max="10" type="range" value="0"
+                            class="bg-transparent position-absolute rounded-2 mb-0"></input>
+                        <div id="musicVolumeBar" class="music-volume-bar rounded-2 bg-white pe-none"></div>
+                    </div>
+                </div>
+                <img src="./../img/now playing svg/eva_plus-circle-outline.svg" class="cursor-pointer mt-1" width="30px"
                     height="30px" alt="">
                 <img src="./../img/ic_round-playlist-add.svg" class="cursor-pointer" width="36px" height="36px" alt="">
-                <img src="./../img/now playing svg/bx_share-alt.svg" class="cursor-pointer" width="30px" height="30px"
-                    alt="">
+                <img src="./../img/now playing svg/bx_share-alt.svg" class="cursor-pointer mt-1" width="28px"
+                    height="28px" alt="">
             </div>
         </div>
         <div class="w-50 bg-black vh-100 d-flex flex-column justify-content-center align-items-center gap-3">
