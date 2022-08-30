@@ -58,9 +58,7 @@ header {
 .search-box {
     background: rgba(143, 143, 143, 0.269);
     color: rgba(255, 255, 255, 0.379);
-
 }
-
 
 /******************main section******************/
 
@@ -82,8 +80,6 @@ header {
 #albumName {
     line-height: 4rem;
 }
-
-;
 
 #artistName {
     line-height: 1.5rem;
@@ -110,5 +106,32 @@ header {
 }
 
 .music-progress-bar {
+    transition: all 0.2s ease 0s;
+}
+
+.music-volume-input {
+    height: .3rem;
+    background-color: rgba(255, 255, 255, 0.380);
+    width: 10rem;
+    top: 2px;
+}
+
+.music-volume-input input {
+    appearance: none;
+    -webkit-appearance: none;
+    cursor: pointer;
+}
+
+.music-volume-input input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    -webkit-appearance: none;
+    height: .3rem;
+    width: .3rem;
+    border-radius: 50%;
+    background-color: transparent;
+}
+
+.music-volume-bar{
+    height: .3rem;
     transition: all 0.2s ease 0s;
 }
